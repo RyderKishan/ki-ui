@@ -36,7 +36,7 @@ module.exports = merge(common, {
     contentBase: 'build',
     historyApiFallback: true,
     liveReload: false,
-    port: 8118,
+    port: 8100,
   },
   plugins: [
     new HtmlWebpackPlugin({

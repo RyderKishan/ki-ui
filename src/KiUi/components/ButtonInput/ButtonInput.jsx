@@ -8,13 +8,14 @@ const ButtonInput = (props) => {
     onClick, value, disabled, theme,
   } = props;
   return (
-    <input
-      className={`KiUi-input KiUi-ButtonInput ${theme}`}
+    <button
+      className={`KiUi KiUi-button KiUi-ButtonInput ${theme}`}
       disabled={disabled}
       onClick={onClick}
       type="button"
-      value={value}
-    />
+    >
+      {value}
+    </button>
   );
 };
 

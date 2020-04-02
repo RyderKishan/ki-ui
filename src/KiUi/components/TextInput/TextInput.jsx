@@ -11,7 +11,7 @@ const TextInput = (props) => {
   } = props;
   return (
     <input
-      className={`KiUi-input KiUi-TextInput ${className}`.trim()}
+      className={`KiUi KiUi-input KiUi-TextInput ${className}`.trim()}
       disabled={disabled}
       defaultValue={defaultValue}
       height={height}

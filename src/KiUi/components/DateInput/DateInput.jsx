@@ -12,7 +12,7 @@ const DateInput = (props) => {
   } = props;
   return (
     <input
-      className={`KiUi-input KiUi-DateInput ${className}`.trim()}
+      className={`KiUi KiUi-input KiUi-DateInput ${className}`.trim()}
       defaultValue={defaultValue}
       disabled={disabled}
       id={id}

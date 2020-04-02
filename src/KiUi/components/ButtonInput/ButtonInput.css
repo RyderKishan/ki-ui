@@ -1,29 +1,24 @@
-.KiUi-input.KiUi-ButtonInput {
+.KiUi-ButtonInput {
+  height: 2em;
+  border-radius: .5em;
+  padding: 0 1em;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
   cursor: pointer;
-  overflow: hidden;
-  padding-bottom: 2px;
-  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
+  border: 1px solid var(--kiui-grey-300);
 }
 
-.KiUi-input[disabled] {
-  color: var(--grey-500);
+.KiUi-ButtonInput:hover {
+  border: 1px solid var(--kiui-grey-500);
+}
+
+.KiUi-ButtonInput:focus {
+  animation: appear 0.3s;
+  border: 1px solid var(--kiui-lightblue-500);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.KiUi-ButtonInput[disabled] {
   cursor: not-allowed;
-}
-
-.KiUi-input.light {
-  background: var(--white);
-  color: var(--kiui-navy);
-  border: 1px solid var(--kiui-navy);
-}
-
-.KiUi-input.dark {
-  background: var(--kiui-navy);
-  color: var(--white);
-  border: 1px solid var(--kiui-navy);
-}
-
-.KiUi-input.default {
-  background: var(--kiui-blue);
-  color: var(--white);
-  border: 1px solid var(--kiui-blue);
 }

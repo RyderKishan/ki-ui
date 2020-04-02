@@ -10,7 +10,7 @@ const SelectInput = (props) => {
   } = props;
   return (
     <select
-      className={`KiUi-SelectInput KiUi-input ${className}`.trim()}
+      className={`KiUi KiUi-SelectInput KiUi-input ${className}`.trim()}
       defaultValue={defaultValue}
       disabled={disabled}
       id={id}

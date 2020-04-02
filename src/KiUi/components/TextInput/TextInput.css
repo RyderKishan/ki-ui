@@ -1,0 +1,35 @@
+.KiUi-TextInput {
+  height: 2em;
+  border-radius: .5em;
+  padding: 0 1em;
+  font-size: inherit;
+  font-family: inherit;
+  outline: none;
+  border: 1px solid var(--kiui-grey-300);
+}
+
+.KiUi-TextInput:hover {
+  border: 1px solid var(--kiui-grey-500);
+}
+
+.KiUi-TextInput:focus {
+  animation: appear 0.3s;
+  border: 1px solid var(--kiui-lightblue-500);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.KiUi-TextInput[type='range'] {
+  box-shadow: unset;
+  border: unset;
+  cursor: pointer;
+}
+
+.KiUi-TextInput[type='range']:focus {
+  animation: unset;
+  border: unset;
+  box-shadow: unset;
+}
+
+.KiUi-TextInput[disabled] {
+  cursor: not-allowed;
+}

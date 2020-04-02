@@ -534,7 +534,7 @@ module.exports = function () {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".KiUi-input.KiUi-ButtonInput {\n  cursor: pointer;\n  overflow: hidden;\n  padding-bottom: 2px;\n  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09); }\n\n.KiUi-input[disabled] {\n  color: var(--grey-500);\n  cursor: not-allowed; }\n\n.KiUi-input.light {\n  background: var(--white);\n  color: var(--kiui-navy);\n  border: 1px solid var(--kiui-navy); }\n\n.KiUi-input.dark {\n  background: var(--kiui-navy);\n  color: var(--white);\n  border: 1px solid var(--kiui-navy); }\n\n.KiUi-input.default {\n  background: var(--kiui-blue);\n  color: var(--white);\n  border: 1px solid var(--kiui-blue); }\n", ""]);
+exports.push([module.i, ".KiUi-ButtonInput {\n  height: 2em;\n  border-radius: .5em;\n  padding: 0 1em;\n  font-size: inherit;\n  font-family: inherit;\n  outline: none;\n  cursor: pointer;\n  border: 1px solid var(--kiui-grey-300); }\n\n.KiUi-ButtonInput:hover {\n  border: 1px solid var(--kiui-grey-500); }\n\n.KiUi-ButtonInput:focus {\n  animation: appear 0.3s;\n  border: 1px solid var(--kiui-lightblue-500);\n  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }\n\n.KiUi-ButtonInput[disabled] {\n  cursor: not-allowed; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -570,7 +570,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".KiUi-DateInput {\n  height: 2em;\n  border-radius: .5em;\n  padding: 0 1em;\n  font-size: inherit;\n  font-family: inherit;\n  outline: none;\n  border: 1px solid var(--kiui-grey-300); }\n\n.KiUi-DateInput:hover {\n  border: 1px solid var(--kiui-grey-500); }\n\n.KiUi-DateInput:focus {\n  animation: appear 0.3s;\n  border: 1px solid var(--kiui-lightblue-500);\n  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }\n\n.KiUi-DateInput[disabled] {\n  cursor: not-allowed; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -732,7 +732,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".KiUi-SelectInput {\n  background: var(--white); }\n", ""]);
+exports.push([module.i, ".KiUi-SelectInput {\n  background: var(--kiui-white);\n  height: 2em;\n  border-radius: .5em;\n  padding: 0 1em;\n  font-size: inherit;\n  font-family: inherit;\n  outline: none;\n  border: 1px solid var(--kiui-grey-300); }\n\n.KiUi-SelectInput:hover {\n  border: 1px solid var(--kiui-grey-500); }\n\n.KiUi-SelectInput:focus {\n  animation: appear 0.3s;\n  border: 1px solid var(--kiui-lightblue-500);\n  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }\n\n.KiUi-SelectInput[disabled] {\n  cursor: not-allowed; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -750,7 +750,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".KiUi-TextInput {\n  height: 2em;\n  border-radius: .5em;\n  padding: 0 1em;\n  font-size: inherit;\n  font-family: inherit;\n  outline: none;\n  border: 1px solid var(--kiui-grey-300); }\n\n.KiUi-TextInput:hover {\n  border: 1px solid var(--kiui-grey-500); }\n\n.KiUi-TextInput:focus {\n  animation: appear 0.3s;\n  border: 1px solid var(--kiui-lightblue-500);\n  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }\n\n.KiUi-TextInput[type='range'] {\n  box-shadow: unset;\n  border: unset;\n  cursor: pointer; }\n\n.KiUi-TextInput[type='range']:focus {\n  animation: unset;\n  border: unset;\n  box-shadow: unset; }\n\n.KiUi-TextInput[disabled] {\n  cursor: not-allowed; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -768,7 +768,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".KiUi-input {\n  height: 32px;\n  border-radius: 8px;\n  padding: 0 12px;\n  outline: none;\n  outline-offset: unset;\n  border: 1px solid var(--grey-300); }\n\n.KiUi-input:focus,\n.KiUi-select:focus {\n  animation: appear 0.5s;\n  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); }\n\n.KiUi-input::selection {\n  color: var(--white);\n  background: var(--kiui-light-gray); }\n\n.KiUi-input[type='range'] {\n  box-shadow: unset;\n  cursor: pointer; }\n\n.KiUi-input[disabled], .KiUi-select[disabled] {\n  cursor: not-allowed; }\n\n.KiUi-Options {\n  display: flex; }\n\n.KiUi-Options > label {\n  display: flex;\n  align-items: center;\n  margin: 0 8px 0 0;\n  cursor: pointer; }\n\n.KiUi-Options.KiUi-column > label {\n  margin: 0 0 8px 0;\n  width: fit-content;\n  height: 32px; }\n\n.KiUi-Options > label > input {\n  margin: 0 8px 0 0;\n  height: unset;\n  cursor: pointer; }\n\n.KiUi-column {\n  flex-direction: column; }\n\n@keyframes appear {\n  0% {\n    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }\n  100% {\n    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); } }\n", ""]);
+exports.push([module.i, ".KiUi::selection {\n  color: var(--kiui-black);\n  background: var(--kiui-grey-300); }\n\nbody {\n  font-size: 14px;\n  font-family: sans-serif, monospace, 'Times New Roman'; }\n\n@keyframes appear {\n  0% {\n    border: 1px solid initial;\n    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0); }\n  100% {\n    border: 1px solid var(--kiui-lightblue-500);\n    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); } }\n\n.KiUi-Options {\n  display: flex; }\n\n.KiUi-Options > label {\n  display: flex;\n  align-items: center;\n  margin: 0 8px 0 0;\n  cursor: pointer; }\n\n.KiUi-Options.KiUi-column > label {\n  margin: 0 0 8px 0;\n  width: fit-content;\n  height: 32px; }\n\n.KiUi-Options > label > input {\n  margin: 0 8px 0 0;\n  height: unset;\n  cursor: pointer; }\n\n.KiUi-column {\n  flex-direction: column; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -786,7 +786,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ":root {\n  --black: #000;\n  --white: #fff;\n  --grey-50: #fafafa;\n  --grey-100: #f5f5f5;\n  --grey-300: #e0e0e0;\n  --grey-500: #9e9e9e;\n  --grey-700: #616161;\n  --grey-900: #212121;\n  --kiui-blue: #00b4d2;\n  --kiui-navy: #004261;\n  --kiui-gray: #53565a;\n  --kiui-light-gray: #888b8d;\n  --kiui-orange: #ff8f1c;\n  --kiui-red: #e4002b;\n  --kiui-green: #00ab84;\n  --kiui-purple: #b0008e; }\n", ""]);
+exports.push([module.i, ":root {\n  --kiui-black: #000;\n  --kiui-white: #fff;\n  --kiui-grey-50: #fafafa;\n  --kiui-grey-100: #f5f5f5;\n  --kiui-grey-300: #e0e0e0;\n  --kiui-grey-500: #9e9e9e;\n  --kiui-grey-700: #616161;\n  --kiui-grey-900: #212121;\n  --kiui-red-50: #ffebee;\n  --kiui-red-100: #ffcdd2;\n  --kiui-red-300: #e57373;\n  --kiui-red-500: #f44336;\n  --kiui-red-700: #d32f2f;\n  --kiui-red-900: #b71c1c;\n  --kiui-lightblue-50: #e3f2fd;\n  --kiui-lightblue-100: #bbdefb;\n  --kiui-lightblue-300: #64b5f6;\n  --kiui-lightblue-500: #03a9f4;\n  --kiui-lightblue-700: #1976d2;\n  --kiui-lightblue-900: #0d47a1;\n  --kiui-blue-50: #e3f2fd;\n  --kiui-blue-100: #bbdefb;\n  --kiui-blue-300: #64b5f6;\n  --kiui-blue-500: #2196f3;\n  --kiui-blue-700: #1976d2;\n  --kiui-blue-900: #0d47a1;\n  --kiui-green-50: #e8f5e9;\n  --kiui-green-100: #c8e6c9;\n  --kiui-green-300: #81c784;\n  --kiui-green-500: #4caf50;\n  --kiui-green-700: #388e3c;\n  --kiui-green-900: #1b5e20;\n  --kiui-yellow-50: #fffde7;\n  --kiui-yellow-100: #fff9c4;\n  --kiui-yellow-300: #fff176;\n  --kiui-yellow-500: #ffeb3b;\n  --kiui-yellow-700: #fbc02d;\n  --kiui-yellow-900: #f57f17;\n  --kiui-indigo-50: #e8eaf6;\n  --kiui-indigo-100: #c5cae9;\n  --kiui-indigo-300: #7986cb;\n  --kiui-indigo-500: #3f51b5;\n  --kiui-indigo-700: #303f9f;\n  --kiui-indigo-900: #1a237e;\n  --kiui-orange-50: #fff3e0;\n  --kiui-orange-100: #ffe0b2;\n  --kiui-orange-300: #ffb74d;\n  --kiui-orange-500: #ff9800;\n  --kiui-orange-700: #f57c00;\n  --kiui-orange-900: #e65100; }\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -57626,9 +57626,9 @@ function (_BaseClient) {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?http://localhost:8118":
+/***/ "./node_modules/webpack-dev-server/client/index.js?http://localhost:8100":
 /*!*********************************************************!*\
-  !*** (webpack)-dev-server/client?http://localhost:8118 ***!
+  !*** (webpack)-dev-server/client?http://localhost:8100 ***!
   \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -57810,7 +57810,7 @@ var onSocketMessage = {
   }
 };
 socket(socketUrl, onSocketMessage);
-/* WEBPACK VAR INJECTION */}.call(this, "?http://localhost:8118"))
+/* WEBPACK VAR INJECTION */}.call(this, "?http://localhost:8100"))
 
 /***/ }),
 
@@ -58527,13 +58527,12 @@ var ButtonInput = function ButtonInput(props) {
       value = props.value,
       disabled = props.disabled,
       theme = props.theme;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "KiUi-input KiUi-ButtonInput ".concat(theme),
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "KiUi KiUi-button KiUi-ButtonInput ".concat(theme),
     disabled: disabled,
     onClick: onClick,
-    type: "button",
-    value: value
-  });
+    type: "button"
+  }, value);
 };
 
 ButtonInput.defaultProps = {
@@ -58765,7 +58764,7 @@ var DateInput = function DateInput(props) {
       title = props.title,
       className = props.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "KiUi-input KiUi-DateInput ".concat(className).trim(),
+    className: "KiUi KiUi-input KiUi-DateInput ".concat(className).trim(),
     defaultValue: defaultValue,
     disabled: disabled,
     id: id,
@@ -59915,7 +59914,7 @@ var SelectInput = function SelectInput(props) {
       defaultValue = props.defaultValue,
       className = props.className;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("select", {
-    className: "KiUi-SelectInput KiUi-input ".concat(className).trim(),
+    className: "KiUi KiUi-SelectInput KiUi-input ".concat(className).trim(),
     defaultValue: defaultValue,
     disabled: disabled,
     id: id,
@@ -60063,7 +60062,7 @@ var TextInput = function TextInput(props) {
       size = props.size,
       src = props.src;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    className: "KiUi-input KiUi-TextInput ".concat(className).trim(),
+    className: "KiUi KiUi-input KiUi-TextInput ".concat(className).trim(),
     disabled: disabled,
     defaultValue: defaultValue,
     height: height,
@@ -60279,12 +60278,12 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
 
 /***/ 0:
 /*!*******************************************************************************!*\
-  !*** multi (webpack)-dev-server/client?http://localhost:8118 ./src/index.jsx ***!
+  !*** multi (webpack)-dev-server/client?http://localhost:8100 ./src/index.jsx ***!
   \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/balkishan/Files/Projects/Mine/ki-ui/node_modules/webpack-dev-server/client/index.js?http://localhost:8118 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:8118");
+__webpack_require__(/*! /Users/balkishan/Files/Projects/Mine/ki-ui/node_modules/webpack-dev-server/client/index.js?http://localhost:8100 */"./node_modules/webpack-dev-server/client/index.js?http://localhost:8100");
 module.exports = __webpack_require__(/*! /Users/balkishan/Files/Projects/Mine/ki-ui/src/index.jsx */"./src/index.jsx");
 
 
