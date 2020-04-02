@@ -1,0 +1,29 @@
+.KiUi-input.KiUi-ButtonInput {
+  cursor: pointer;
+  overflow: hidden;
+  padding-bottom: 2px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09);
+}
+
+.KiUi-input[disabled] {
+  color: var(--grey-500);
+  cursor: not-allowed;
+}
+
+.KiUi-input.light {
+  background: var(--white);
+  color: var(--kiui-navy);
+  border: 1px solid var(--kiui-navy);
+}
+
+.KiUi-input.dark {
+  background: var(--kiui-navy);
+  color: var(--white);
+  border: 1px solid var(--kiui-navy);
+}
+
+.KiUi-input.default {
+  background: var(--kiui-blue);
+  color: var(--white);
+  border: 1px solid var(--kiui-blue);
+}

@@ -1,0 +1,64 @@
+.KiUi-input {
+  height: 32px;
+  border-radius: 8px;
+  padding: 0 12px;
+  outline: none;
+  outline-offset: unset;
+  border: 1px solid var(--grey-300);
+}
+
+.KiUi-input:focus,
+.KiUi-select:focus {
+  animation: appear 0.5s;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+}
+
+.KiUi-input::selection {
+  color: var(--white);
+  background: var(--kiui-light-gray);
+}
+
+.KiUi-input[type='range'] {
+  box-shadow: unset;
+  cursor: pointer;
+}
+
+.KiUi-input[disabled], .KiUi-select[disabled] {
+  cursor: not-allowed;
+}
+
+.KiUi-Options {
+  display: flex;
+}
+
+.KiUi-Options > label{
+  display: flex;
+  align-items: center;
+  margin: 0 8px 0 0;
+  cursor: pointer;
+}
+
+.KiUi-Options.KiUi-column > label{
+  margin: 0 0 8px 0;
+  width: fit-content;
+  height: 32px;
+}
+
+.KiUi-Options > label > input {
+  margin: 0 8px 0 0;
+  height: unset;
+  cursor: pointer;
+}
+
+.KiUi-column {
+  flex-direction: column;
+}
+
+@keyframes appear {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.0);
+  }
+  100% {
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  }
+}
