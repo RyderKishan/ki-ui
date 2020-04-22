@@ -4,7 +4,7 @@ import DateInput from './components/DateInput';
 import RadioInput from './components/RadioInput';
 import SelectInput from './components/SelectInput';
 import TextInput from './components/TextInput';
-import JsonForm from './components/JsonForm';
+import OrderingInput from './components/OrderingInput';
 import './styles/colors.css';
 import './styles/KiUi.css';
 
@@ -15,5 +15,5 @@ export {
   RadioInput,
   SelectInput,
   TextInput,
-  JsonForm,
+  OrderingInput,
 };

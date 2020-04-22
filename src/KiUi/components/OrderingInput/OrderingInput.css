@@ -1,0 +1,43 @@
+.listItem {
+  padding: 8px;
+  border: 1px solid;
+  animation-name: flash;
+  animation-duration: .45s;
+  animation-fill-mode: both;
+  background: beige;
+  cursor: grab;
+}
+
+.OrderingInput {
+  width: 50%;
+  margin: 0 auto;
+  flex-direction: column;
+  display: flex;
+}
+
+.drag {
+  background: red;
+}
+
+.over {
+  background: border-box;
+  margin-bottom: 34px;
+}
+
+@keyframes expand {
+  0% {
+    margin-bottom: 0px;
+  }
+  100% {
+    margin-bottom: 8px;
+  }
+}
+
+@keyframes flash {
+  0% {
+    transform: translateY(16px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
