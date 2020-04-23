@@ -13,7 +13,7 @@ const DateInput = (props) => {
   return (
     <input
       className={`KiUi KiUi-input KiUi-DateInput ${className}`.trim()}
-      defaultValue={defaultValue}
+      defaultValue={defaultValue || value}
       disabled={disabled}
       id={id}
       max={max}
@@ -22,7 +22,6 @@ const DateInput = (props) => {
       readOnly={readOnly}
       title={title}
       type={type}
-      value={value}
     />
   );
 };

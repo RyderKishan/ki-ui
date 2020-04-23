@@ -1,0 +1,51 @@
+.KiUi-RadioInput {
+  display: flex;
+}
+
+.KiUi-RadioInput>label {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.KiUi-RadioInput.vertical>label {
+  margin-bottom: 1em;
+  margin-right: unset;
+  width: fit-content;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  height: 2em;
+}
+
+.KiUi-RadioInput.vertical>label:last-child {
+  margin-bottom: unset;
+}
+
+.KiUi-RadioInput>label {
+  margin-right: 1em;
+}
+
+.KiUi-RadioInput>label:last-child {
+  margin-right: unset;
+}
+
+.KiUi-RadioInput>label>input {
+  margin: 0 1em 0 0;
+  height: unset;
+  cursor: pointer;
+}
+
+.vertical {
+  flex-direction: column;
+}
+
+.KiUi-RadioInput>label>input[disabled] {
+  cursor: not-allowed;
+}
+
+.KiUi-RadioInput>label[disabled] {
+  cursor: not-allowed;
+  color: var(--kiui-grey-500);
+}

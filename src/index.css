@@ -1,0 +1,9 @@
+.KiUi-Examples > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.KiUi-Examples > div > div:first-child {
+  width: 8em;
+}

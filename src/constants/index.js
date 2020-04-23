@@ -113,11 +113,48 @@ const props = {
     },
   ],
 };
-const metadata = {
-  Value: '',
-};
+const checkBoxOptions = [
+  {
+    label: 'Non-Intervivos Trusts',
+    value: 'nit',
+  },
+  {
+    label: 'Trusts Test',
+    value: 'tt',
+    disabled: true,
+  },
+  {
+    label: 'Authorized Sign of Non-Intervivos Trusts',
+    value: 'sign',
+  },
+  {
+    label: 'Have a blast',
+    value: 'blast',
+  },
+];
+
+const radioOptions = [
+  {
+    label: 'Need to assign a new value',
+    value: 'ntaanv',
+  },
+  {
+    label: 'Testing for the disabled',
+    value: 'tftd',
+    disabled: true,
+  },
+  {
+    label: 'Authorized Signature',
+    value: 'as',
+  },
+  {
+    label: 'Blast of Knowledge',
+    value: 'bok',
+  },
+];
 
 export {
   props,
-  metadata,
+  checkBoxOptions,
+  radioOptions,
 };

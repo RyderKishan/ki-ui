@@ -5,21 +5,50 @@ import {
   TextInput, CheckboxInput, DateInput,
   RadioInput, SelectInput, ButtonInput,
 } from './KiUi';
-// import * as Constants from './constants';
+import './index.css';
+import * as Constants from './constants';
 
 ReactDOM.render(
-  <div>
-    <TextInput />
-    <br />
-    <DateInput />
-    <br />
-    <SelectInput />
-    <br />
-    <CheckboxInput />
-    <br />
-    <RadioInput />
-    <br />
-    <ButtonInput value="Nemo" />
+  <div className="KiUi-Examples">
+    <h1>
+      Exapmles of KiUi Components
+    </h1>
+    <div>
+      <div>
+        Text Input
+      </div>
+      <TextInput />
+    </div>
+    <div>
+      <div>
+        Checkbox Input
+      </div>
+      <CheckboxInput options={Constants.checkBoxOptions} />
+    </div>
+    <div>
+      <div>
+        Date Input
+      </div>
+      <DateInput />
+    </div>
+    <div>
+      <div>
+        Radio Input
+      </div>
+      <RadioInput options={Constants.radioOptions} />
+    </div>
+    <div>
+      <div>
+        Select Input
+      </div>
+      <SelectInput />
+    </div>
+    <div>
+      <div>
+        Button Input
+      </div>
+      <ButtonInput value="Submit" />
+    </div>
   </div>,
   document.getElementById('app'),
 );

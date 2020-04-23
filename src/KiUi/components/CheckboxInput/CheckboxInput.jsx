@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './CheckboxInput.css';
@@ -8,23 +8,37 @@ const CheckboxInput = (props) => {
     onChange, options, disabled, vertical, id,
     className, value,
   } = props;
+  const [localValue, setLocalValue] = useState({});
+  const onChangeHandler = (event) => {
+    const { value: fieldId, checked } = event.target;
+    const newValue = { ...(value === undefined ? localValue : value) };
+    newValue[fieldId] = checked;
+    if (value === undefined) {
+      setLocalValue(newValue);
+      return;
+    }
+    onChange(newValue);
+  };
+  const checkedValue = value || localValue;
   return (
     <div
-      className={`KiUi-Options KiUi-CheckboxInput ${vertical ? 'KiUi-column' : ''} ${className}`.trim()}
+      className={`Ki-Ui KiUi-CheckboxInput ${vertical ? 'ci-vertical' : ''} ${className}`.trim()}
     >
       {
         options.map((option) => (
           <label
             key={option.value}
-            htmlFor={option.value}
+            htmlFor={`KiUi-ci-${option.value}`}
+            disabled={option.disabled || disabled}
           >
             <input
-              checked={value.includes(option.value)}
+              checked={checkedValue && checkedValue[option.value] === undefined
+                ? false : checkedValue && checkedValue[option.value]}
               className="KiUi-input"
-              disabled={disabled}
-              id={option.value}
+              disabled={option.disabled || disabled}
+              id={`KiUi-ci-${option.value}`}
               name={id}
-              onChange={onChange}
+              onChange={onChangeHandler}
               type="checkbox"
               value={option.value}
             />
@@ -40,23 +54,9 @@ CheckboxInput.defaultProps = {
   className: '',
   disabled: false,
   id: null,
-  onChange: () => null,
-  options: [
-    {
-      label: 'Authorized Sign of Non-Intervivos Trusts',
-      value: 'sign',
-    },
-    {
-      label: 'Non-Intervivos Trusts',
-      value: 'nit',
-    },
-    {
-      label: 'Trusts Test',
-      value: 'tt',
-      disabled: true,
-    },
-  ],
-  value: [],
+  onChange: null,
+  options: [],
+  value: undefined,
   vertical: true,
 };
 
@@ -72,7 +72,7 @@ CheckboxInput.propTypes = {
       value: PropTypes.string,
     }),
   ),
-  value: PropTypes.arrayOf(PropTypes.string),
+  value: PropTypes.shape({}),
   vertical: PropTypes.bool,
 };
 

@@ -14,9 +14,9 @@
 }
 
 .KiUi-ButtonInput:focus {
-  animation: appear 0.3s;
+  /* animation: appear 0.3s; */
   border: 1px solid var(--kiui-lightblue-500);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); */
 }
 
 .KiUi-ButtonInput[disabled] {

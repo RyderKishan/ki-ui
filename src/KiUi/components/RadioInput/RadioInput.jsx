@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import './RadioInput.css';
@@ -8,23 +8,34 @@ const RadioInput = (props) => {
     onChange, value, id, options, disabled, vertical,
     className,
   } = props;
+  const [localValue, setLocalValue] = useState('');
+  const onChangeHandler = (event) => {
+    const { value: fieldId } = event.target;
+    if (value !== undefined) {
+      onChange(fieldId);
+    } else {
+      setLocalValue(fieldId);
+    }
+  };
+  const checkedValue = value || localValue;
   return (
     <div
-      className={`KiUi-Options KiUi-RadioInput ${vertical ? 'KiUi-column' : ''} ${className}`.trim()}
+      className={`KiUi KiUi-RadioInput ${vertical ? 'vertical' : ''} ${className}`.trim()}
     >
       {
         options.map((option) => (
           <label
             key={option.value}
             htmlFor={`KiUi-ri-${option.value}`}
+            disabled={option.disabled || disabled}
           >
             <input
-              checked={value === option.value}
+              checked={checkedValue === option.value}
               className="KiUi-input"
-              disabled={disabled}
+              disabled={option.disabled || disabled}
               id={`KiUi-ri-${option.value}`}
               name={id}
-              onChange={onChange}
+              onChange={onChangeHandler}
               type="radio"
               value={option.value}
             />
@@ -41,23 +52,9 @@ RadioInput.defaultProps = {
   className: '',
   disabled: false,
   id: null,
-  onChange: () => { },
-  options: [
-    {
-      label: 'Authorized Sign of Non-Intervivos Trusts',
-      value: 'sign',
-    },
-    {
-      label: 'Non-Intervivos Trusts',
-      value: 'nit',
-    },
-    {
-      label: 'Trusts Test',
-      value: 'tt',
-      disabled: true,
-    },
-  ],
-  value: '',
+  onChange: null,
+  options: [],
+  value: undefined,
   vertical: false,
 };
 

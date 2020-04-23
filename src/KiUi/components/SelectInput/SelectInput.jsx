@@ -10,14 +10,13 @@ const SelectInput = (props) => {
   } = props;
   return (
     <select
-      className={`KiUi KiUi-SelectInput KiUi-input ${className}`.trim()}
-      defaultValue={defaultValue}
+      className={`KiUi KiUi-SelectInput KiUi-select ${className}`.trim()}
+      defaultValue={defaultValue || value}
       disabled={disabled}
       id={id}
       onChange={onChange}
       placeholder={placeholder}
       size={size}
-      value={value}
     >
       {
         emptyOption && (
@@ -43,21 +42,7 @@ SelectInput.defaultProps = {
   emptyOption: true,
   id: null,
   onChange: null,
-  options: [
-    {
-      label: 'Authorized Sign of Non-Intervivos Trusts',
-      value: 'sign',
-    },
-    {
-      label: 'Non-Intervivos Trusts',
-      value: 'nit',
-    },
-    {
-      label: 'Trusts Test',
-      value: 'tt',
-      disabled: true,
-    },
-  ],
+  options: [],
   placeholder: 'Select One...',
   size: null,
   value: undefined,

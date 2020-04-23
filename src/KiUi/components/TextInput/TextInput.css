@@ -13,13 +13,13 @@
 }
 
 .KiUi-TextInput:focus {
-  animation: appear 0.3s;
+  /* animation: appear 0.3s; */
   border: 1px solid var(--kiui-lightblue-500);
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6);
+  /* box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.6); */
 }
 
 .KiUi-TextInput[type='range'] {
-  box-shadow: unset;
+  /* box-shadow: unset; */
   border: unset;
   cursor: pointer;
 }
@@ -27,7 +27,7 @@
 .KiUi-TextInput[type='range']:focus {
   animation: unset;
   border: unset;
-  box-shadow: unset;
+  /* box-shadow: unset; */
 }
 
 .KiUi-TextInput[disabled] {
