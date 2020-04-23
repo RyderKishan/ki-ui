@@ -4,14 +4,14 @@
 
 <div align="center">
 
-[![npm package](https://img.shields.io/npm/v/ki-ui/latest.svg)](https://www.npmjs.com/package/fitx-form)
-[![npm downloads](https://img.shields.io/npm/dm/ki-ui.svg)](https://www.npmjs.com/package/fitx-form)
+[![npm package](https://img.shields.io/npm/v/ki-ui/latest.svg)](https://www.npmjs.com/package/ki-ui)
+[![npm downloads](https://img.shields.io/npm/dm/ki-ui.svg)](https://www.npmjs.com/package/ki-ui)
 
 </div>
 
 ## Installation
 
-ki-ui is available as an [npm package](https://www.npmjs.com/package/fitx-form).
+ki-ui is available as an [npm package](https://www.npmjs.com/package/ki-ui).
 
 ```sh
 // with npm
