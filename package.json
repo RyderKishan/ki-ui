@@ -1,6 +1,6 @@
 {
   "name": "ki-ui",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Material based UI Components wrapped over native HTML",
   "main": "lib/index.js",
   "directories": {

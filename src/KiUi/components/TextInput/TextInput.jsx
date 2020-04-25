@@ -13,7 +13,7 @@ const TextInput = (props) => {
     <input
       className={`KiUi KiUi-input KiUi-TextInput ${className}`.trim()}
       disabled={disabled}
-      defaultValue={defaultValue || value}
+      defaultValue={defaultValue}
       height={height}
       id={id}
       max={max}
@@ -28,13 +28,14 @@ const TextInput = (props) => {
       src={src}
       step={step}
       type={type}
+      value={value}
     />
   );
 };
 
 TextInput.defaultProps = {
   className: '',
-  defaultValue: null,
+  defaultValue: undefined,
   disabled: false,
   height: null,
   id: null,
@@ -42,7 +43,7 @@ TextInput.defaultProps = {
   maxLength: null,
   min: null,
   onBlur: null,
-  onChange: null,
+  onChange: () => null,
   placeholder: '',
   readOnly: false,
   size: null,

@@ -6,10 +6,11 @@ import './CheckboxInput.css';
 const CheckboxInput = (props) => {
   const {
     onChange, options, disabled, vertical, id,
-    className, value,
+    className, value, defaultValue, readOnly,
   } = props;
-  const [localValue, setLocalValue] = useState({});
+  const [localValue, setLocalValue] = useState(defaultValue);
   const onChangeHandler = (event) => {
+    if (readOnly) return;
     const { value: fieldId, checked } = event.target;
     const newValue = { ...(value === undefined ? localValue : value) };
     newValue[fieldId] = checked;
@@ -52,16 +53,19 @@ const CheckboxInput = (props) => {
 
 CheckboxInput.defaultProps = {
   className: '',
+  defaultValue: undefined,
   disabled: false,
   id: null,
   onChange: null,
   options: [],
   value: undefined,
+  readOnly: false,
   vertical: true,
 };
 
 CheckboxInput.propTypes = {
   className: PropTypes.string,
+  defaultValue: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   onChange: PropTypes.func,
@@ -73,6 +77,7 @@ CheckboxInput.propTypes = {
     }),
   ),
   value: PropTypes.shape({}),
+  readOnly: PropTypes.bool,
   vertical: PropTypes.bool,
 };
 

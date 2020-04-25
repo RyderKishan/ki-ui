@@ -11,7 +11,7 @@ const SelectInput = (props) => {
   return (
     <select
       className={`KiUi KiUi-SelectInput KiUi-select ${className}`.trim()}
-      defaultValue={defaultValue || value}
+      value={defaultValue || value}
       disabled={disabled}
       id={id}
       onChange={onChange}
@@ -37,10 +37,10 @@ const SelectInput = (props) => {
 
 SelectInput.defaultProps = {
   className: '',
-  defaultValue: null,
+  defaultValue: undefined,
   disabled: false,
   emptyOption: true,
-  id: null,
+  id: undefined,
   onChange: null,
   options: [],
   placeholder: 'Select One...',
@@ -63,7 +63,7 @@ SelectInput.propTypes = {
     }),
   ),
   placeholder: PropTypes.string,
-  size: PropTypes.oneOf(['large', 'small', 'default']),
+  size: PropTypes.number,
   value: PropTypes.string,
 };
 
