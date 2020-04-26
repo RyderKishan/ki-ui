@@ -28,7 +28,7 @@ const RadioInput = (props) => {
             disabled={option.disabled || disabled}
           >
             <input
-              defaultChecked={checkedValue === option.value}
+              checked={checkedValue === option.value}
               className="KiUi-input"
               disabled={option.disabled || disabled}
               id={`KiUi-ri-${option.value}`}
