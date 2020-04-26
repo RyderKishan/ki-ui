@@ -14,10 +14,7 @@ const CheckboxInput = (props) => {
     const { value: fieldId, checked } = event.target;
     const newValue = { ...(value === undefined ? localValue : value) };
     newValue[fieldId] = checked;
-    if (value === undefined) {
-      setLocalValue(newValue);
-      return;
-    }
+    setLocalValue(newValue);
     onChange(newValue);
   };
   const checkedValue = value || localValue;
@@ -33,7 +30,7 @@ const CheckboxInput = (props) => {
             disabled={option.disabled || disabled}
           >
             <input
-              checked={checkedValue && checkedValue[option.value] === undefined
+              defaultChecked={checkedValue && checkedValue[option.value] === undefined
                 ? false : checkedValue && checkedValue[option.value]}
               className="KiUi-input"
               disabled={option.disabled || disabled}
@@ -56,7 +53,7 @@ CheckboxInput.defaultProps = {
   defaultValue: undefined,
   disabled: false,
   id: null,
-  onChange: null,
+  onChange: () => null,
   options: [],
   value: undefined,
   readOnly: false,
@@ -65,7 +62,7 @@ CheckboxInput.defaultProps = {
 
 CheckboxInput.propTypes = {
   className: PropTypes.string,
-  defaultValue: PropTypes.string,
+  defaultValue: PropTypes.shape({}),
   disabled: PropTypes.bool,
   id: PropTypes.string,
   onChange: PropTypes.func,

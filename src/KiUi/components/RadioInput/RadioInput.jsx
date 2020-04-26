@@ -12,11 +12,8 @@ const RadioInput = (props) => {
   const onChangeHandler = (event) => {
     if (readOnly) return;
     const { value: fieldId } = event.target;
-    if (value !== undefined) {
-      onChange(fieldId);
-    } else {
-      setLocalValue(fieldId);
-    }
+    onChange(fieldId);
+    setLocalValue(fieldId);
   };
   const checkedValue = value || localValue;
   return (
@@ -31,7 +28,7 @@ const RadioInput = (props) => {
             disabled={option.disabled || disabled}
           >
             <input
-              checked={checkedValue === option.value}
+              defaultChecked={checkedValue === option.value}
               className="KiUi-input"
               disabled={option.disabled || disabled}
               id={`KiUi-ri-${option.value}`}
@@ -55,7 +52,7 @@ RadioInput.defaultProps = {
   disabled: false,
   readOnly: false,
   id: null,
-  onChange: null,
+  onChange: () => null,
   options: [],
   value: undefined,
   vertical: false,
